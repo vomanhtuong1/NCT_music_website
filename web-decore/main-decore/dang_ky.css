@@ -1,0 +1,186 @@
+form{
+    width: 60%;
+    position: fixed;
+    z-index: 200;
+    top: 8%;
+    background-color: aliceblue;
+    left: 22%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.9);
+    border-radius: 5px;
+    padding-bottom: 30px;
+}
+
+.sign_up_title_content{
+    color: rgba(66, 65, 64, 0.632);
+    font-size: 13px;
+    margin-top: 20px;
+    margin-right: 33px;
+    text-align: end;
+}
+
+/*.mydiv{
+    width: 100%;
+    height: 1000px;
+    background-image: url('https://cdn.tgdd.vn//GameApp/1364005//AnhchupManhinh2021-06-29luc20.40.06-800x418.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    filter: brightness(50%);
+    position: relative;
+}*/
+
+#sign_up_title{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 20px;
+    align-items: center;
+}
+
+
+
+#sign_up_form{
+    display: flex;
+    width: 100%;
+    border-top: 2px solid rgba(147, 140, 140, 0.549);
+}
+
+#sign_up_form_item_right{
+    width: 40%;
+    border-left: 2px solid rgb(147, 140, 140, 0.549);
+}
+
+.sign_up_form_item_left{
+    width: 60%;
+}
+
+.sign_up_item_left_label{
+    width: 35%;
+    text-align: end;
+    margin-right: 10px;
+}
+
+.sign_up_item input[type="text"]{
+    width: 60%;
+    padding: 5px 0;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.5);
+}
+
+label{
+    text-align: end;
+}
+
+
+.sign_up_item_dieu_khoan{
+    width: 60%;
+    margin-left: 37.5%;
+    text-decoration:dashed;
+    text-align: justify;
+}
+.sign_up_item{
+    margin:20px 20px 0 10px;
+    display: flex;
+}
+
+.sign_up_form_item_right_container{
+    text-align: center;
+    position: relative;
+    margin: 15px 15px;
+}
+
+.check_box_robot{
+    border: 1px solid rgba(147, 140, 140, 0.549);
+    height: 70px;
+    width: 59%;
+    max-width: 59%;
+    display: flex;
+    padding-left: 5px;
+    align-items: center;
+}
+
+.check_box_robot img{
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.check_box_robot span{
+    margin-left: 5px;
+}
+
+.sign_up_form_item_right_container button{
+    margin-top: 15px;
+    width: 80%;
+    height: auto;
+    padding: 7px 7px;
+    color: aliceblue;
+    background-color: #E74C3C;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+.btn_sign_up{
+    width: 57%;
+    padding: 5px 0;
+    margin: 20px 0px 20px 195px;
+    background-color: #2582BE;
+    color: aliceblue;
+    font-size: 16px;
+    box-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.7 );
+    border-radius: 5px;
+}
+
+.spaceline_sign_{
+    width: 90%;
+    height: auto;
+    margin: 5px 5px 5px 20px;
+    z-index: 200;
+}
+
+.sign_up_item_dieu_khoan span a{
+    text-decoration: none;
+    color: #40A4CA;
+}
+
+
+.spaceline_sign_::before,
+.spaceline_sign_::after {
+      content: "";
+      position: absolute;
+      top: 45%;
+      width: 35%;
+      height: 0.5px; /* Độ dày của đường line */
+      background-color: black; /* Màu sắc của đường line */
+}
+
+.spaceline_sign_::before {
+        left: 0;
+      }
+      
+.spaceline_sign_::after {
+        right: 0;
+      }
+
+.private{
+    display: flex;
+    flex-direction: column;
+}
+
+.sign_up_for{
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.sign_up_for span a{
+    margin-left: 10px;
+    color: #44A8C2;
+    text-decoration: none;
+}
+
+
+
