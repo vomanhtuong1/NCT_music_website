@@ -1,0 +1,85 @@
+.container-case .title-case{
+    display: grid;
+    grid-template-columns: repeat(5,160px);
+    grid-template-rows:  73px 8px 73px 8px 73px 8px 73px;
+}
+
+.title-case-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.box-content-music-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-icon{
+    display: flex;
+    align-items: center;
+}
+
+.info-song {
+    display: grid;
+    grid-template-columns: 60px 410px ;
+}
+
+.list-mask{
+    margin-left: 10px;
+}
+
+.icon-tag-hd{
+    background-color: #00adef;
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+
+.copy-icon{
+    color: #9F9F9F;
+}
+
+.title-case-div li{
+    margin:5px 0 5px 0;
+}
+
+.li-line-1{
+    grid-column-start:1 ;
+    grid-column-end: 6;
+}
+
+.li-line-2{
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+.li-line-3{
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+
+.list-mask{
+    display: flex;
+    align-items: center;
+}
+
+.box_pageview{
+    height: 40px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    background-color: #e5e5e5;
+    justify-content: center;
+}
+
+.box_pageview a{
+    width: 40px;
+    height: 31.6pz;
+    margin-left: 3px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.box_pageview .active{
+    border-bottom: 2px solid #E74C3C;
+}
