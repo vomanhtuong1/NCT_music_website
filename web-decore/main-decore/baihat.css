@@ -1,7 +1,15 @@
 .container-case .title-case{
     display: grid;
     grid-template-columns: repeat(5,160px);
-    grid-template-rows:  73px 8px 73px 8px 73px 8px 73px;
+    grid-template-rows:  73px 8px 73px 8px 36.5px 8px 36.5px;
+}
+
+.left-song {
+    margin-top: 30px;
+}
+
+.right-song{
+    margin-top: 10px;
 }
 
 .title-case-div{
