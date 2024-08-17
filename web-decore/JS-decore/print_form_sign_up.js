@@ -1,5 +1,4 @@
 const choose_sign_up = document.querySelector('.up')
-console.log(choose_sign_up);
 
 choose_sign_up.onclick = function () {
     const sign_up = document.getElementById('sign_up')

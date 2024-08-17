@@ -91,3 +91,7 @@
 .box_pageview .active{
     border-bottom: 2px solid #E74C3C;
 }
+
+#pauser{
+    display: none;
+}
