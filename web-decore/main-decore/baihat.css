@@ -4,6 +4,10 @@
     grid-template-rows:  73px 8px 73px 8px 36.5px 8px 36.5px;
 }
 
+#container-all{
+    position: relative;
+}
+
 .left-song {
     margin-top: 30px;
 }
@@ -37,6 +41,8 @@
 .list-mask{
     margin-left: 10px;
 }
+
+
 
 .icon-tag-hd{
     background-color: #00adef;
@@ -94,4 +100,16 @@
 
 #pauser{
     display: none;
+}
+
+.playingMusic{
+    background-color: rgba(13, 13, 13, 0.179);
+    padding: 4px 8px;
+}
+
+.playMusicBar{
+    position: fixed;
+    z-index: 102;
+    bottom: 0;
+    width: 100%;
 }

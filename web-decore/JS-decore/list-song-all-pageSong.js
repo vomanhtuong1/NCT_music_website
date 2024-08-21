@@ -1,12 +1,11 @@
 import { myarray_bai_hat_all } from "./array-song-pageSong.js";
-
+import { app } from "../case/caseplayMusic.js";
 const listSong = document.querySelector('.list-song')
-
-
-function printListsong() {
+console.log(app.currentIndex)
+export function printListsong() {
     const htmls = myarray_bai_hat_all.map((song, index) => {
         return `
-        <li>
+        <li class="${index === app.currentIndex ? 'playingMusic' : ''}">
             <div class="box-content-music-list">
                 <div class="info-song">
                     <a><img class="avatar-list-bai-hat" 
@@ -42,13 +41,15 @@ function printListsong() {
     listSong.innerHTML = htmls.join('')
 }
 printListsong()
-const audioj = document.querySelector('#audio')
+
+/*const audioj = document.querySelector('#audio')
 var isPlaying = false
 const aespa = document.querySelectorAll('.iconplayer')
 const start = document.querySelectorAll('#player')
 const stop = document.querySelectorAll('#pause')
 const maxp = myarray_bai_hat_all.map((songs, index) => {
-    aespa[index].onclick = function () {
+    const aespa1 = aespa[index]
+    aespa1.onclick = function () {
         audioj.src = songs.path
         if (isPlaying) {
             audioj.pause()
@@ -62,6 +63,6 @@ const maxp = myarray_bai_hat_all.map((songs, index) => {
 }
 )
 
-
+*/
 
 
