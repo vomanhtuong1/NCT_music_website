@@ -20,8 +20,9 @@ audio.volume = 5 / 100
 const divplaymusica = $('.div-container-all')
 const selec = '.list-song li'
 const select = '.list-song-right li'
+const dowLoadBtn = $('.dowload')
 const isNoneed = $('.playMusicBar')
-console.log(isNoneed)
+console.log(dowLoadBtn)
 
 
 
@@ -41,6 +42,16 @@ export const app = {
                 return this.myarray_bai_hat_alls[this.currentIndex]
             }
         })
+    },
+
+    dowLoad: function () {
+        dowLoadBtn.addEventListener('click', () => {
+            const link = document.createElement('a');
+            const namedow = this.currentSong.name
+            link.href = this.currentSong.path // Thay thế bằng đường dẫn đến file nhạc của bạn
+            link.download = namedow; // Tên file khi tải về
+            link.click();
+        });
     },
 
     do: function () {
@@ -203,6 +214,7 @@ export const app = {
         //xử lý sự kiện
         this.handelEvent()
         this.do()
+        this.dowLoad()
 
     }
 }

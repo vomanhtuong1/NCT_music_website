@@ -102,6 +102,10 @@
 
 }
 
+.dowload:active{
+    color: #de7cba;
+}
+
 .progress {
     width: 600px;
     -webkit-appearance: none;

@@ -2,7 +2,7 @@ export const htmlMusic = document.querySelector('.playMusicBar')
 
 export var myMusicBar = [
     `
-    <link rel="stylesheet" href="/web-content/musicUI/playMusicenu.css">
+    <link rel="stylesheet" href="/web-decore/main-decore/playMusicenu.css">
     <div class="div-container-all">
         <div class="div-container">
             <div class="container-item-1">
@@ -38,6 +38,7 @@ export var myMusicBar = [
                 <i class="fa-regular fa-window-maximize"></i>
                 <i class="fa-solid fa-volume-high"></i>
                 <input id="id" class="id" type="range" value="5" step="1" min="0" max="100">
+                <i class="fa-solid fa-download dowload"></i>
                 <div class="iconx">
                     <i class="fa-solid fa-xmark"></i>
                 </div>

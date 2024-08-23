@@ -34,8 +34,12 @@ form{
     justify-content: space-between;
     margin: 10px 20px;
     align-items: center;
+    height: 80px;
 }
 
+.myicon_sign_up{
+    height: 80px;
+}
 
 
 #sign_up_form{

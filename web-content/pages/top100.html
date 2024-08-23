@@ -31,18 +31,21 @@
         
         <script src="/web-content/Javascript-content/iclude-html.js"></script>-->
 
+
     <div id="container-all">
 
         <main id="header"></main>
-        <div style="width: 100%;height: 500px;background-color:rgb(153, 53, 145) ;" id="background"></div>
+        <div style="width: 100%;height: 500px;background-color:rgb(193, 141, 69) ;" id="background"></div>
+
         <footer id="footer"></footer>
     </div>
     <div id="sign_up"></div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
-        $("#header").load("header.html");
-        $("#sign_up").load("dang_ky.html");
-        $("#footer").load("footer.html");
+        $("#header").load("/web-content/components/header/header.html");
+        $("#footer").load("/web-content/components/footer/footer.html");
+        $("#sign_up").load("/web-content/components/signUpIn/signUp.html");
+
         const scripts = document.createElement('script')
         scripts.src = '/web-decore/JS-decore/print_form_sign_up.js'
         document.querySelector('#sign_up').appendChild(scripts)
