@@ -112,4 +112,14 @@
     z-index: 102;
     bottom: 0;
     width: 100%;
+    display: none;
+}
+
+.playMusicBar-active{
+    display: block;
+}
+
+.iconx{
+    height: 120px;
+    margin-top: 5px;
 }

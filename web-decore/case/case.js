@@ -38,6 +38,9 @@ export var myMusicBar = [
                 <i class="fa-regular fa-window-maximize"></i>
                 <i class="fa-solid fa-volume-high"></i>
                 <input id="id" class="id" type="range" value="5" step="1" min="0" max="100">
+                <div class="iconx">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
             </div>
         </div>
     </div>`

@@ -18,7 +18,10 @@ const iconrepeat = $('.iconrepeat')
 const volume = $('#id')
 audio.volume = 5 / 100
 const divplaymusica = $('.div-container-all')
-console.log(divplaymusica)
+const selec = '.list-song li'
+const select = '.list-song-right li'
+const isNoneed = $('.playMusicBar')
+console.log(isNoneed)
 
 
 
@@ -26,6 +29,7 @@ const divPlay = $('.container-item-mid-icon')
 
 
 export const app = {
+    isNone: true,
     isRepeat: true,
     isRandom: false,
     isPlaying: false,
@@ -41,20 +45,29 @@ export const app = {
 
     do: function () {
         document.addEventListener('DOMContentLoaded', () => {
-            const listItems = document.querySelectorAll('.list-song li');
+
+            const listItems = document.querySelectorAll(selec);
+            const iconxx = $('.iconx')
             // Ví dụ: Thêm sự kiện click cho từng thẻ li
             listItems.forEach((item, index) => {
                 item.addEventListener('click', () => {
+                    if (this.isNone) {
+                        isNoneed.classList.add('playMusicBar-active')
+                    }
+
                     this.currentIndex = index
                     this.loadcurrentSong()
                     audio.play()
-                    divplaymusica.styles.display = "block"
                     for (var i = 0; i < listItems.length; i++) {
                         if (i !== index) {
                             listItems[i].classList.remove('playingMusic')
                         } else {
                             listItems[index].classList.add('playingMusic')
                         }
+                    }
+                    iconxx.onclick = function () {
+                        isNoneed.classList.remove('playMusicBar-active')
+                        this.isNone = true
                     }
                 });
             })
